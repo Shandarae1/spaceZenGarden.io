@@ -133,7 +133,7 @@ a[href="/215/"] {
   margin: 0 auto;
   max-width: 150px;
   padding: 1em;
-  content: url(../assets/icon215.png);
+  content: url(assets/icon215.png);
 }
 
 a[href="/216/"] {
@@ -142,7 +142,7 @@ a[href="/216/"] {
   margin: 0 auto;
   max-width: 150px;
   padding: 1em;
-  content: url(../assets/icon216.png);
+  content: url(assets/icon216.png);
 }
 
 a[href="/217/"] {
@@ -151,7 +151,7 @@ a[href="/217/"] {
   margin: 0 auto;
   max-width: 150px;
   padding: 1em;
-  content: url(../assets/icon217.png);
+  content: url(assets/icon217.png);
 }
 
 a[href="/218/"] {
@@ -160,7 +160,7 @@ a[href="/218/"] {
   margin: 0 auto;
   max-width: 150px;
   padding: 1em;
-  content: url(../assets/icon218.png);
+  content: url(assets/icon218.png);
 }
 
 a[href="/219/"] {
@@ -169,7 +169,7 @@ a[href="/219/"] {
   margin: 0 auto;
   max-width: 150px;
   padding: 1em;
-  content: url(../assets/icon219.png);
+  content: url(assets/icon219.png);
 }
 
 a[href="/220/"] {
@@ -178,7 +178,7 @@ a[href="/220/"] {
   margin: 0 auto;
   max-width: 150px;
   padding: 1em;
-  content: url(../assets/icon220.png);
+  content: url(assets/icon220.png);
 }
 
 a[href="/221/"] {
@@ -187,7 +187,7 @@ a[href="/221/"] {
   margin: 0 auto;
   max-width: 150px;
   padding: 1em;
-  content: url(../assets/icon221.png);
+  content: url(assets/icon221.png);
 }
 
 .design-archives,
@@ -204,7 +204,7 @@ a[href="/221/"] {
 }
 
 .design-archives a {
-  content: url("../assets/icon215.png");
+  content: url("assets/icon215.png");
   display: block;
   padding: 1em;
   max-width: 150px;
@@ -224,7 +224,7 @@ a[href="/221/"] {
 }
 
 .zen-resources a::before {
-  content: url("../assets/SolarSystemicon150.png");
+  content: url("assets/SolarSystemicon150.png");
   display: block;
   padding: 1em;
 }
@@ -236,7 +236,7 @@ a[href="/221/"] {
     margin: 0 auto;
     max-width: 500px;
     padding: 1em;
-    content: url(../assets/icon214.png);
+    content: url(assets/icon214.png);
   }
 
   a[href="/215/"] {
@@ -245,7 +245,7 @@ a[href="/221/"] {
     margin: 0 auto;
     max-width: 500px;
     padding: 1em;
-    content: url(../assets/icon215.png);
+    content: url(assets/icon215.png);
   }
 
   a[href="/216/"] {
@@ -254,7 +254,7 @@ a[href="/221/"] {
     margin: 0 auto;
     max-width: 500px;
     padding: 1em;
-    content: url(../assets/icon216.png);
+    content: url(assets/icon216.png);
   }
 
   a[href="/217/"] {
@@ -263,7 +263,7 @@ a[href="/221/"] {
     margin: 0 auto;
     max-width: 500px;
     padding: 1em;
-    content: url(../assets/icon217.png);
+    content: url(assets/icon217.png);
   }
 
   a[href="/218/"] {
@@ -272,7 +272,7 @@ a[href="/221/"] {
     margin: 0 auto;
     max-width: 500px;
     padding: 1em;
-    content: url(../assets/icon218.png);
+    content: url(assets/icon218.png);
   }
 
   a[href="/219/"] {
@@ -281,7 +281,7 @@ a[href="/221/"] {
     margin: 0 auto;
     max-width: 500px;
     padding: 1em;
-    content: url(../assets/icon219.png);
+    content: url(assets/icon219.png);
   }
 
   a[href="/220/"] {
@@ -290,7 +290,7 @@ a[href="/221/"] {
     margin: 0 auto;
     max-width: 500px;
     padding: 1em;
-    content: url(../assets/icon220.png);
+    content: url(assets/icon220.png);
   }
 
   a[href="/221/"] {
@@ -299,7 +299,7 @@ a[href="/221/"] {
     margin: 0 auto;
     max-width: 500px;
     padding: 1em;
-    content: url(../assets/icon221.png);
+    content: url(assets/icon221.png);
   }
 
   .zen-resources ul {
@@ -316,7 +316,7 @@ footer {
 }
 
 footer a {
-  background: url("../assets/bluehex100.png") no-repeat;
+  background: url("assets/bluehex100.png") no-repeat;
   width: 100px;
   height: 87px;
   line-height: 87px;

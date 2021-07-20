@@ -1,0 +1,197 @@
+@import "partials/layout";
+@import "partials/colors";
+@import "partials/typography";
+@import "partials/header";
+@import "partials/navigation";
+@import "partials/footer";
+
+$marsRover: url("/assets/marsrover.png");
+
+$border: $color-4 3px solid;
+$border-radius: 30px 0 30px 0;
+
+body {
+  color: white;
+}
+
+// background twinkle stars
+@keyframes move-twink-back {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -10000px 5000px;
+  }
+}
+
+#css-zen-garden,
+.page-wrapper {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: block;
+}
+
+#css-zen-garden {
+  background: #000 url("https://image.ibb.co/mjnygo/stars.png") repeat top
+    center;
+  z-index: 0;
+  background-attachment: fixed;
+  margin: 0;
+}
+
+.page-wrapper {
+  background: transparent url("https://image.ibb.co/ir1DE8/twinkling.png")
+    repeat top center;
+  z-index: 1;
+  animation: move-twink-back 350s linear infinite;
+  background-attachment: fixed;
+  padding: 1em;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.summary,
+.preamble,
+.design-selection,
+.design-archives,
+.zen-resources,
+.requirements,
+.explanation,
+.participation,
+.benefits {
+  border: $border;
+  border-radius: $border-radius;
+  padding: 1em;
+  margin: 1.5em 0 0 0;
+}
+
+.sidebar {
+  grid-row: 2/3;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.explanation,
+.participation,
+.benefits {
+  grid-column: 1/4;
+}
+
+.requirements {
+  grid-column: 1/3;
+  border: $border;
+  border-radius: $border-radius;
+  padding: 1em;
+  margin: 1.5em 0;
+}
+
+@include MQ(M) {
+  /* first section */
+
+  .intro {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.5em;
+  }
+
+  .intro header {
+    grid-column: 1/4;
+    grid-row: 1/2;
+    width: 100%;
+  }
+
+  .summary {
+    grid-column: 1/2;
+  }
+  .preamble {
+    grid-column: 2/4;
+  }
+
+  /* middle section */
+
+  .wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5em;
+  }
+  .design-selection {
+    grid-column: 1/3;
+    grid-row: 1/3;
+  }
+
+  .design-archives {
+    grid-column: 3/4;
+    grid-row: 1/2;
+  }
+
+  .zen-resources {
+    grid-column: 3/4;
+    grid-row: 2/3;
+    margin: 0;
+  }
+
+  //   /* last section */
+
+  .supporting {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5em;
+  }
+
+  .explanation,
+  .benefits {
+    grid-column: 1/2;
+  }
+
+  .participation,
+  .requirements {
+    grid-column: 2/3;
+  }
+
+  .explanation,
+  .participation {
+    margin: 1.5em 0 0 0;
+  }
+
+  .benefits,
+  .requirements {
+    margin: 0;
+  }
+
+  .benefits::after {
+    content: $marsRover;
+    display: block; //a display needed for movement
+    animation: rover 20s linear infinite;
+  }
+
+  @keyframes rover {
+    0% {
+      transform: translatex(0);
+    }
+
+    20% {
+      transform: translatex(15%);
+    }
+
+    40% {
+      transform: translateX(35%);
+    }
+
+    60% {
+      transform: translateX(0);
+    }
+
+    80% {
+      transform: translateX(-10%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+}

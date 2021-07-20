@@ -1,0 +1,91 @@
+@import "typography.scss";
+@import "layout.scss";
+@import "colors.scss";
+
+// adding icons as links for "Select a design" div
+
+$loop-start: 214;
+$loop-end: $loop-start + 8;
+
+@mixin link($link-num) {
+  display: block;
+  grid-column: 1/2;
+  margin: 0 auto;
+  max-width: 150px;
+  padding: 1em;
+}
+
+@mixin link500($link-num) {
+  display: block;
+  grid-column: 1/2;
+  margin: 0 auto;
+  max-width: 500px;
+  padding: 1em;
+}
+
+@for $index from $loop-start to $loop-end {
+  a[href="/#{$index}/"] {
+    @include link($index);
+    content: url(../assets/icon#{$index}.png);
+  }
+}
+
+// icon variables
+
+$Bluehex: url("../assets/bluehex100.png");
+$MoonIcon: url("../assets/icon215.png");
+$SolarSystem: url("../assets/SolarSystemicon150.png");
+
+.design-archives,
+.zen-resources {
+  text-align: center;
+}
+
+.design-selection ul,
+.design-archives ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 0 auto;
+  text-align: center;
+}
+
+.design-archives a {
+  content: $MoonIcon;
+  display: block;
+  padding: 1em;
+  max-width: 150px;
+  margin: 0 auto;
+}
+
+.next::after {
+  content: "Next Designs >";
+  color: $color-1;
+  font-family: "Koho", sans-serif;
+}
+
+.viewall:after {
+  content: "View All Designs >";
+  color: $color-1;
+  font-family: "Koho", sans-serif;
+}
+
+.zen-resources a::before {
+  content: $SolarSystem;
+  display: block;
+  padding: 1em;
+}
+
+@include MQ(M) {
+  @for $index from $loop-start to $loop-end {
+    a[href="/#{$index}/"] {
+      @include link500($index);
+      content: url(../assets/icon#{$index}.png);
+    }
+  }
+  .zen-resources ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 auto;
+    text-align: center;
+  }
+}
